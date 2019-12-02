@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "468701251421",
+    "firebase_url": "https://tigerfoodapp.firebaseio.com",
+    "project_id": "tigerfoodapp",
+    "storage_bucket": "tigerfoodapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468701251421:android:3b2983f26f993c5db24ab4",
+        "android_client_info": {
+          "package_name": "com.NNEW.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468701251421-d9n811s6r5bft6vocm7kepanl8454gaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.NNEW.project",
+            "certificate_hash": "04a3b103e5a39eb1a1b369542b0dc12057155461"
+          }
+        },
+        {
+          "client_id": "468701251421-neo1tpnrh5imt6lius2g5fei85vs6mhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCucmA2tY6X9UlFqFyiQMBMfPMIHvjjiwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468701251421-neo1tpnrh5imt6lius2g5fei85vs6mhb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468701251421:android:fec0c6d2685be556b24ab4",
+        "android_client_info": {
+          "package_name": "com.Watcharapon.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468701251421-0pcvhdivti4cn3hkvg24ge3a85674ngf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Watcharapon.project",
+            "certificate_hash": "04a3b103e5a39eb1a1b369542b0dc12057155461"
+          }
+        },
+        {
+          "client_id": "468701251421-neo1tpnrh5imt6lius2g5fei85vs6mhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCucmA2tY6X9UlFqFyiQMBMfPMIHvjjiwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468701251421-neo1tpnrh5imt6lius2g5fei85vs6mhb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468701251421:android:cc9bf17588b861dbb24ab4",
+        "android_client_info": {
+          "package_name": "com.watcharapon1.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "468701251421-bdd96gphhlchjdlkfujjtbkben3g4lbm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.watcharapon1.application",
+            "certificate_hash": "04a3b103e5a39eb1a1b369542b0dc12057155461"
+          }
+        },
+        {
+          "client_id": "468701251421-neo1tpnrh5imt6lius2g5fei85vs6mhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCucmA2tY6X9UlFqFyiQMBMfPMIHvjjiwY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "468701251421-neo1tpnrh5imt6lius2g5fei85vs6mhb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
