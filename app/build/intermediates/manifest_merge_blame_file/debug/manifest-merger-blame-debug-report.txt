@@ -1,0 +1,237 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.watcharapon1.application"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->D:\Applicetion\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\Applicetion\app\src\main\AndroidManifest.xml
+10
+11    <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+12    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\20ffe928599a6644a36da01e3492f940\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:13:5-79
+13-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\20ffe928599a6644a36da01e3492f940\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:13:22-76
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\20ffe928599a6644a36da01e3492f940\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:14:5-67
+14-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\20ffe928599a6644a36da01e3492f940\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:14:22-64
+15    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+15-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\b530dbbccd8fd7addcf074c43fb302c3\play-services-measurement-api-17.2.1\AndroidManifest.xml:24:5-68
+15-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\b530dbbccd8fd7addcf074c43fb302c3\play-services-measurement-api-17.2.1\AndroidManifest.xml:24:22-65
+16    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+16-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\ae29ac7f606802dee4445c6cbfa93208\firebase-iid-19.0.0\AndroidManifest.xml:26:5-82
+16-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\ae29ac7f606802dee4445c6cbfa93208\firebase-iid-19.0.0\AndroidManifest.xml:26:22-79
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+17-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:26:5-110
+17-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:26:22-107
+18
+19    <application
+19-->D:\Applicetion\app\src\main\AndroidManifest.xml:5:5-21:19
+20        android:allowBackup="true"
+20-->D:\Applicetion\app\src\main\AndroidManifest.xml:6:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.1.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\478b79604eaaf934858ce3739dce1708\core-1.1.0\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->D:\Applicetion\app\src\main\AndroidManifest.xml:7:9-43
+24        android:label="@string/app_name"
+24-->D:\Applicetion\app\src\main\AndroidManifest.xml:8:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->D:\Applicetion\app\src\main\AndroidManifest.xml:9:9-54
+26        android:supportsRtl="true"
+26-->D:\Applicetion\app\src\main\AndroidManifest.xml:10:9-35
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme" >
+28-->D:\Applicetion\app\src\main\AndroidManifest.xml:11:9-40
+29        <activity android:name="com.watcharapon1.application.MyAdapter" />
+29-->D:\Applicetion\app\src\main\AndroidManifest.xml:12:9-56
+29-->D:\Applicetion\app\src\main\AndroidManifest.xml:12:19-44
+30        <activity android:name="com.watcharapon1.application.ListActivity" />
+30-->D:\Applicetion\app\src\main\AndroidManifest.xml:13:9-50
+30-->D:\Applicetion\app\src\main\AndroidManifest.xml:13:19-47
+31        <activity android:name="com.watcharapon1.application.MainActivity" >
+31-->D:\Applicetion\app\src\main\AndroidManifest.xml:14:9-20:20
+31-->D:\Applicetion\app\src\main\AndroidManifest.xml:14:19-47
+32            <intent-filter>
+32-->D:\Applicetion\app\src\main\AndroidManifest.xml:15:13-19:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->D:\Applicetion\app\src\main\AndroidManifest.xml:16:17-69
+33-->D:\Applicetion\app\src\main\AndroidManifest.xml:16:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->D:\Applicetion\app\src\main\AndroidManifest.xml:18:17-77
+35-->D:\Applicetion\app\src\main\AndroidManifest.xml:18:27-74
+36            </intent-filter>
+37        </activity>
+38        <activity
+38-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+39            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+39-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+40            android:excludeFromRecents="true"
+40-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+41            android:exported="true"
+41-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+42            android:launchMode="singleTask"
+42-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+43            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+43-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+44            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+44-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+45
+46        <service
+46-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:33:9-39:19
+47            android:name="com.google.firebase.components.ComponentDiscoveryService"
+47-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:34:13-84
+48            android:directBootAware="true"
+48-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\948f92c4fead9e58f8c351e8ee179943\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+49            android:exported="false" >
+49-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:35:13-37
+50            <meta-data
+50-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+51                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+51-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+52                android:value="com.google.firebase.components.ComponentRegistrar" />
+52-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\7c78a11c6b4a4456334831db0797030d\firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+53            <meta-data
+53-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\20ffe928599a6644a36da01e3492f940\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:20:13-22:85
+54                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+54-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\20ffe928599a6644a36da01e3492f940\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:21:17-111
+55                android:value="com.google.firebase.components.ComponentRegistrar" />
+55-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\20ffe928599a6644a36da01e3492f940\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:22:17-82
+56            <meta-data
+56-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\44b784fabca10d2710bcf5b818712cb5\firebase-storage-19.1.0\AndroidManifest.xml:33:13-35:85
+57                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+57-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\44b784fabca10d2710bcf5b818712cb5\firebase-storage-19.1.0\AndroidManifest.xml:34:17-107
+58                android:value="com.google.firebase.components.ComponentRegistrar" />
+58-->[com.google.firebase:firebase-storage:19.1.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\44b784fabca10d2710bcf5b818712cb5\firebase-storage-19.1.0\AndroidManifest.xml:35:17-82
+59            <meta-data
+59-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\b530dbbccd8fd7addcf074c43fb302c3\play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
+60                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+60-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\b530dbbccd8fd7addcf074c43fb302c3\play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+61                android:value="com.google.firebase.components.ComponentRegistrar" />
+61-->[com.google.android.gms:play-services-measurement-api:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\b530dbbccd8fd7addcf074c43fb302c3\play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+62            <meta-data
+62-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\ae29ac7f606802dee4445c6cbfa93208\firebase-iid-19.0.0\AndroidManifest.xml:32:13-34:85
+63                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+63-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\ae29ac7f606802dee4445c6cbfa93208\firebase-iid-19.0.0\AndroidManifest.xml:33:17-96
+64                android:value="com.google.firebase.components.ComponentRegistrar" />
+64-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\ae29ac7f606802dee4445c6cbfa93208\firebase-iid-19.0.0\AndroidManifest.xml:34:17-82
+65        </service>
+66
+67        <activity
+67-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:23:9-27:75
+68            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+68-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:24:13-93
+69            android:excludeFromRecents="true"
+69-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:25:13-46
+70            android:exported="false"
+70-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:26:13-37
+71            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+71-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:27:13-72
+72        <!--
+73            Service handling Google Sign-In user revocation. For apps that do not integrate with
+74            Google Sign-In, this service will never be started.
+75        -->
+76        <service
+76-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:33:9-36:110
+77            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+77-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:34:13-89
+78            android:exported="true"
+78-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:35:13-36
+79            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+79-->[com.google.android.gms:play-services-auth:17.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\21f6fbdc7f200ea7b6b3cb32cc21a6a4\play-services-auth-17.0.0\AndroidManifest.xml:36:13-107
+80
+81        <receiver
+81-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\ae29ac7f606802dee4445c6cbfa93208\firebase-iid-19.0.0\AndroidManifest.xml:37:9-44:20
+82            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+82-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\ae29ac7f606802dee4445c6cbfa93208\firebase-iid-19.0.0\AndroidManifest.xml:38:13-78
+83            android:exported="true"
+83-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\ae29ac7f606802dee4445c6cbfa93208\firebase-iid-19.0.0\AndroidManifest.xml:39:13-36
+84            android:permission="com.google.android.c2dm.permission.SEND" >
+84-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\ae29ac7f606802dee4445c6cbfa93208\firebase-iid-19.0.0\AndroidManifest.xml:40:13-73
+85            <intent-filter>
+85-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\ae29ac7f606802dee4445c6cbfa93208\firebase-iid-19.0.0\AndroidManifest.xml:41:13-43:29
+86                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+86-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\ae29ac7f606802dee4445c6cbfa93208\firebase-iid-19.0.0\AndroidManifest.xml:42:17-81
+86-->[com.google.firebase:firebase-iid:19.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\ae29ac7f606802dee4445c6cbfa93208\firebase-iid-19.0.0\AndroidManifest.xml:42:25-78
+87            </intent-filter>
+88        </receiver>
+89
+90        <activity
+90-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+91            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+91-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+92            android:exported="false"
+92-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+93            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+93-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\5361484794665ae726e7094cda0f326e\play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+94
+95        <provider
+95-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\948f92c4fead9e58f8c351e8ee179943\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+96            android:name="com.google.firebase.provider.FirebaseInitProvider"
+96-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\948f92c4fead9e58f8c351e8ee179943\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+97            android:authorities="com.watcharapon1.application.firebaseinitprovider"
+97-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\948f92c4fead9e58f8c351e8ee179943\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+98            android:exported="false"
+98-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\948f92c4fead9e58f8c351e8ee179943\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+99            android:initOrder="100" />
+99-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\948f92c4fead9e58f8c351e8ee179943\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+100
+101        <receiver
+101-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
+102            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+102-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
+103            android:enabled="true"
+103-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
+104            android:exported="false" >
+104-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
+105        </receiver>
+106        <receiver
+106-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
+107            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+107-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
+108            android:enabled="true"
+108-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
+109            android:exported="true"
+109-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
+110            android:permission="android.permission.INSTALL_PACKAGES" >
+110-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
+111            <intent-filter>
+111-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+112                <action android:name="com.android.vending.INSTALL_REFERRER" />
+112-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+112-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+113            </intent-filter>
+114        </receiver>
+115
+116        <service
+116-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
+117            android:name="com.google.android.gms.measurement.AppMeasurementService"
+117-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
+118            android:enabled="true"
+118-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
+119            android:exported="false" />
+119-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
+120        <service
+120-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
+121            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+121-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
+122            android:enabled="true"
+122-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
+123            android:exported="false"
+123-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
+124            android:permission="android.permission.BIND_JOB_SERVICE" />
+124-->[com.google.android.gms:play-services-measurement:17.2.1] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\13c226e437214fdcd738371431d4652d\play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
+125
+126        <meta-data
+126-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\1199121d25351093fadb333dc8059ee0\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+127            android:name="com.google.android.gms.version"
+127-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\1199121d25351093fadb333dc8059ee0\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+128            android:value="@integer/google_play_services_version" />
+128-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Watcharapon\.gradle\caches\transforms-2\files-2.1\1199121d25351093fadb333dc8059ee0\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+129    </application>
+130
+131</manifest>
