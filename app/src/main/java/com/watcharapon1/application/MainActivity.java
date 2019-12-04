@@ -18,7 +18,13 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.HashMap;
+import java.util.Map;
+
 public class MainActivity extends AppCompatActivity {
+
+    public static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
 
     private FirebaseAuth mAuth;
 
@@ -34,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
     private void testFireStore(){
         final String TAG = "testFireStore";
         FirebaseFirestore db = FirebaseFirestore.getInstance();
-        db.collection("recommended")
+        db.collection("img_Chicken_rice")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -59,30 +65,28 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
+
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-//                            updateUI(user);
-                            Intent Home = new Intent(MainActivity.this,HomeActivity.class);
-                            startActivity(Home);
+                            openpage();
                         } else {
                             // If sign in fails, display a message to the user.
                             Log.w(TAG, "signInWithEmail:failure", task.getException());
                             Toast.makeText(MainActivity.this, "Authentication failed.",
                                     Toast.LENGTH_SHORT).show();
-                            updateUI(null);
+
                         }
                     }
                 });
     }
 
-    public void sigoutClick(View view){
-        final String TAG = "sigoutClick";
-        Log.w(TAG, "sign out");
-        mAuth.signOut();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        updateUI(currentUser);
-    }
+//    public void sigoutClick(View view){
+//        final String TAG = "sigoutClick";
+//        Log.w(TAG, "sign out");
+//        mAuth.signOut();
+//        FirebaseUser currentUser = mAuth.getCurrentUser();
+//        openpage(currentUser);
+//    }
 
     @Override
     public void onStart() {
@@ -90,20 +94,28 @@ public class MainActivity extends AppCompatActivity {
         // Check if user is signed in (non-null) and update UI accordingly.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if(currentUser != null){
-            updateUI(currentUser);
+//            openpage();
+            Toast.makeText(this,"Hello " + currentUser, Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(this,"Hello ", Toast.LENGTH_SHORT).show();
         }
     }
 
-    public void updateUI(FirebaseUser currentUser){
-        final String TAG = "updateUI";
-        TextView loginName = findViewById(R.id.textView);
-        if(currentUser != null){
-            Log.d(TAG, currentUser.getEmail());
+    public void openpage(){
+        final String TAG = "open page";
+        Intent intent = new Intent(this, ListActivity.class);
+        startActivity(intent);
 
-            loginName.setText(currentUser.getEmail());
-        }
-        else{
-            loginName.setText("");
-        }
+//        if(currentUser != null){
+//            Log.d(TAG, currentUser.getEmail());
+//            Intent intent = new Intent(this, ListActivity.class);
+//            startActivity(intent);
+//
+//        }
+//        else{
+//        Toast.makeText(this,"Hello World", Toast.LENGTH_SHORT).show();
+//
+//        }
     }
+
 }
